@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-
+/* istanbul ignore file */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'my-heroes-w2m-test';
+  title = 'SuperHeroes Management';
 }

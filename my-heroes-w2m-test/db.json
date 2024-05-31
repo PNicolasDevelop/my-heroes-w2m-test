@@ -1,0 +1,304 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Superman",
+      "creation_year": 1938,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Flight",
+        "Superhuman strength",
+        "Heat vision"
+      ],
+      "creator": "Jerry Siegel and Joe Shuster",
+      "archenemy": "Lex Luthor",
+      "description": "Superman, also known as the Man of Steel, is a symbol of hope and justice. He possesses incredible powers, including flight, super strength, and heat vision, making him one of the most powerful beings on Earth.",
+      "company": "DC"
+    },
+    {
+      "id": 2,
+      "name": "Batman",
+      "creation_year": 1939,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Superior intelligence",
+        "Master martial artist",
+        "Advanced technology"
+      ],
+      "creator": "Bob Kane and Bill Finger",
+      "archenemy": "Joker",
+      "description": "Batman, the Dark Knight, is a vigilante who fights crime in Gotham City. Despite lacking superpowers, he relies on his intellect, combat skills, and high-tech gadgets to combat evil and protect his city.",
+      "company": "DC"
+    },
+    {
+      "id": 3,
+      "name": "Spider-Man",
+      "creation_year": 1962,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Spider sense",
+        "Superhuman agility",
+        "Web-slinging"
+      ],
+      "creator": "Stan Lee and Steve Ditko",
+      "archenemy": "Green Goblin",
+      "description": "Spider-Man, also known as Peter Parker, gained his powers after being bitten by a radioactive spider. With his spider-like abilities, he swings through the streets of New York, fighting crime and saving innocent lives.",
+      "company": "Marvel"
+    },
+    {
+      "id": 4,
+      "name": "Wonder Woman",
+      "creation_year": 1941,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Divine strength",
+        "Superhuman speed",
+        "Wisdom"
+      ],
+      "creator": "William Moulton Marston",
+      "archenemy": "Ares",
+      "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters.",
+      "company": "DC"
+    },
+    {
+      "id": 5,
+      "name": "Flash",
+      "creation_year": 1940,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Super speed",
+        "Time travel",
+        "Accelerated healing"
+      ],
+      "creator": "Gardner Fox and Harry Lampert",
+      "archenemy": "Reverse-Flash",
+      "description": "The Flash, also known as the Scarlet Speedster, is the fastest man alive. With the ability to move at incredible speeds, he protects Central City from metahuman threats and otherworldly dangers.",
+      "company": "DC"
+    },
+    {
+      "id": 6,
+      "name": "Iron Man",
+      "creation_year": 1963,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Genius inventor",
+        "Advanced weaponry",
+        "Enhanced durability"
+      ],
+      "creator": "Stan Lee, Larry Lieber, Don Heck, and Jack Kirby",
+      "archenemy": "Mandarin",
+      "description": "Iron Man, also known as Tony Stark, is a billionaire genius who fights crime using his high-tech armored suit. With his intellect and resources, he defends the world from technological threats.",
+      "company": "Marvel"
+    },
+    {
+      "id": 7,
+      "name": "Hulk",
+      "creation_year": 1962,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Superhuman strength",
+        "Cellular regeneration",
+        "Extreme resilience"
+      ],
+      "creator": "Stan Lee and Jack Kirby",
+      "archenemy": "Abomination",
+      "description": "The Hulk, a gamma-powered behemoth, is a force of nature fueled by rage. Despite his immense strength, he struggles with inner turmoil, constantly battling to control the monster within.",
+      "company": "Marvel"
+    },
+    {
+      "id": 8,
+      "name": "Thor",
+      "creation_year": 1962,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Control over lightning",
+        "Superhuman strength",
+        "Longevity"
+      ],
+      "creator": "Stan Lee, Larry Lieber, and Jack Kirby",
+      "archenemy": "Loki",
+      "description": "Thor, the God of Thunder, wields the enchanted hammer Mjolnir to protect Asgard and Midgard. With his divine powers and warrior spirit, he defends the Nine Realms from cosmic threats.",
+      "company": "Marvel"
+    },
+    {
+      "id": 9,
+      "name": "Captain America",
+      "creation_year": 1941,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Superhuman strength",
+        "Agility",
+        "Master hand-to-hand combatant"
+      ],
+      "creator": "Joe Simon and Jack Kirby",
+      "archenemy": "Red Skull",
+      "description": "Captain America, a symbol of patriotism and bravery, is a super soldier enhanced to peak human perfection. With his shield and unwavering resolve, he fights tyranny and injustice wherever it appears.",
+      "company": "Marvel"
+    },
+    {
+      "id": 10,
+      "name": "Green Lantern",
+      "creation_year": 1940,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Power ring",
+        "Flight",
+        "Creation of solid constructs with the mind"
+      ],
+      "creator": "Bill Finger and Martin Nodell",
+      "archenemy": "Sinestro",
+      "description": "Green Lantern, an intergalactic peacekeeper, wields the power of will through his emerald ring. With his ring's abilities, he patrols the universe, facing cosmic threats and protecting innocent lives.",
+      "company": "DC"
+    },
+    {
+      "id": 11,
+      "name": "Black Panther",
+      "creation_year": 1966,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Superhuman strength",
+        "Agility",
+        "Vibranium"
+      ],
+      "creator": "Stan Lee and Jack Kirby",
+      "archenemy": "Killmonger",
+      "description": "Black Panther, the king of Wakanda, is a skilled warrior and protector of his nation. With his vibranium suit and enhanced abilities, he defends Wakanda's interests and fights for global justice.",
+      "company": "Marvel"
+    },
+    {
+      "id": 12,
+      "name": "Doctor Strange",
+      "creation_year": 1963,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Master of the mystic arts",
+        "Teleportation",
+        "Reality manipulation"
+      ],
+      "creator": "Stan Lee and Steve Ditko",
+      "archenemy": "Dormammu",
+      "description": "Doctor Strange, the Sorcerer Supreme, protects the world from mystical threats. With his knowledge of magic and the mystic arts, he battles dark forces beyond the comprehension of ordinary mortals.",
+      "company": "Marvel"
+    },
+    {
+      "id": 13,
+      "name": "Wolverine",
+      "creation_year": 1974,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Healing factor",
+        "Retractable claws",
+        "Heightened senses"
+      ],
+      "creator": "Len Wein, Roy Thomas, and John Romita Sr.",
+      "archenemy": "Sabretooth",
+      "description": "Wolverine, also known as Logan, is a fierce and relentless mutant with a tragic past. With his adamantium claws and accelerated healing factor, he is a formidable warrior and a member of the X-Men, fighting to protect mutantkind and all of humanity from threats both internal and external.",
+      "company": "Marvel"
+    },
+    {
+      "id": 14,
+      "name": "Wonder Woman",
+      "creation_year": 1941,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Divine strength",
+        "Superhuman speed",
+        "Wisdom"
+      ],
+      "creator": "William Moulton Marston",
+      "archenemy": "Ares",
+      "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters.",
+      "company": "DC"
+    },
+    {
+      "id": 15,
+      "name": "Captain Marvel",
+      "creation_year": 1967,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Flight",
+        "Superhuman strength",
+        "Energy projection"
+      ],
+      "creator": "Roy Thomas and Gene Colan",
+      "archenemy": "Thanos",
+      "description": "Captain Marvel, also known as Carol Danvers, is a cosmic-powered superheroine defending Earth and the universe. With her ability to harness cosmic energy, she battles cosmic threats and protects the innocent from annihilation.",
+      "company": "Marvel"
+    },
+    {
+      "id": 16,
+      "name": "Aquaman",
+      "creation_year": 1941,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Communication with marine life",
+        "Superhuman strength",
+        "Swimming at high speeds"
+      ],
+      "creator": "Mort Weisinger and Paul Norris",
+      "archenemy": "Black Manta",
+      "description": "Aquaman, the King of Atlantis, is a powerful superhero with command over the seas. With his ability to communicate with marine life and immense strength, he protects the oceans and defends Atlantis from threats above and below the waves.",
+      "company": "DC"
+    },
+    {
+      "id": 17,
+      "name": "Green Arrow",
+      "creation_year": 1941,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Master archer",
+        "Athletic ability",
+        "Hand-to-hand combat"
+      ],
+      "creator": "Mort Weisinger and George Papp",
+      "archenemy": "Merlyn",
+      "description": "Green Arrow, also known as Oliver Queen, is a skilled archer and social justice advocate. With his mastery of the bow and arrow, along with his combat skills, he fights against corruption and inequality, defending the innocent and standing up for what's right.",
+      "company": "DC"
+    },
+    {
+      "id": 18,
+      "name": "Cyborg",
+      "creation_year": 1980,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Advanced technology integration",
+        "Superhuman strength",
+        "Enhanced senses"
+      ],
+      "creator": "Marv Wolfman and George Pérez",
+      "archenemy": "Grid",
+      "description": "Cyborg, also known as Victor Stone, is a half-man, half-machine hero with cybernetic enhancements. With his technological prowess and superhuman abilities, he defends the world against cybernetic threats and serves as a beacon of hope for those like him.",
+      "company": "DC"
+    },
+    {
+      "id": 19,
+      "name": "The Flash",
+      "creation_year": 1956,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Super speed",
+        "Time manipulation",
+        "Intangibility"
+      ],
+      "creator": "Robert Kanigher, John Broome, and Carmine Infantino",
+      "archenemy": "Reverse-Flash",
+      "description": "The Flash, also known as the Scarlet Speedster, is the fastest man alive. With the ability to move at incredible speeds, he protects Central City from metahuman threats and otherworldly dangers.",
+      "company": "DC"
+    },
+    {
+      "id": 20,
+      "name": "Supergirl",
+      "creation_year": 1959,
+      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "best_powers": [
+        "Flight",
+        "Superhuman strength",
+        "Heat vision"
+      ],
+      "creator": "Otto Binder and Al Plastino",
+      "archenemy": "Lena Luthor",
+      "description": "Supergirl, also known as Kara Zor-El, is Superman's cousin from the planet Krypton. With powers similar to Superman's, including flight and super strength, she fights alongside her cousin to protect Earth from extraterrestrial and supernatural threats.",
+      "company": "DC"
+    }
+  ]
+}
