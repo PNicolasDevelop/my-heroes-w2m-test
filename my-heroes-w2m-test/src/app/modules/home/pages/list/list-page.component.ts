@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SuperheroesService } from '../../services/superheroes.service';
-import { Hero } from '../../models/models';
+import { FilterHeroes, Hero } from '../../models/models';
 import { catchError, map, of } from 'rxjs';
 
 @Component({
@@ -34,5 +34,29 @@ export class ListPageComponent implements OnInit {
           this.listHeroes = val.data ?? [];
         }
       });
+  }
+
+  filterData(data: FilterHeroes) {
+    this.api
+      .filterHeroes(data)
+      .pipe(
+        map(data => ({ success: true, data: data, error: null })),
+        catchError(error => {
+          return of({
+            success: false,
+            data: undefined,
+            error: JSON.parse(error.response),
+          });
+        })
+      )
+      .subscribe(val => {
+        if (val.success) {
+          this.listHeroes = val.data ?? [];
+        }
+      });
+  }
+
+  filterList(id: number) {
+    this.listHeroes = this.listHeroes.filter((hero: Hero) => hero.id !== id);
   }
 }

@@ -13,6 +13,11 @@ import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FilterComponent } from './components/filter/filter.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const PAGES = [ListPageComponent, CreatePage];
 const COMPONENTS = [SupheroeCardComponent, FilterComponent];
@@ -43,6 +48,12 @@ const MODALS = [QuestionModalComponent];
     CommonModule,
     MatGridListModule,
     MatExpansionModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule,
+    MatDialogModule,
   ],
   providers: [SuperheroesService],
   exports: [],

@@ -1,0 +1,15 @@
+.filters-container{
+  display: flex;
+  mat-form-field{
+    margin-right: 5px !important;
+  }
+  .actions{
+    margin-left: 20px;
+    display: inline-flex;
+    //align-items: center;
+    button{
+      margin: 3px;
+      padding: 25px !important;
+    }
+  }
+}

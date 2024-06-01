@@ -1,53 +1,8 @@
 {
   "heroes": [
     {
-      "id": 1,
-      "name": "Superman",
-      "creation_year": 1938,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
-      "best_powers": [
-        "Flight",
-        "Superhuman strength",
-        "Heat vision"
-      ],
-      "creator": "Jerry Siegel and Joe Shuster",
-      "archenemy": "Lex Luthor",
-      "description": "Superman, also known as the Man of Steel, is a symbol of hope and justice. He possesses incredible powers, including flight, super strength, and heat vision, making him one of the most powerful beings on Earth.",
-      "company": "DC"
-    },
-    {
-      "id": 2,
-      "name": "Batman",
-      "creation_year": 1939,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
-      "best_powers": [
-        "Superior intelligence",
-        "Master martial artist",
-        "Advanced technology"
-      ],
-      "creator": "Bob Kane and Bill Finger",
-      "archenemy": "Joker",
-      "description": "Batman, the Dark Knight, is a vigilante who fights crime in Gotham City. Despite lacking superpowers, he relies on his intellect, combat skills, and high-tech gadgets to combat evil and protect his city.",
-      "company": "DC"
-    },
-    {
-      "id": 3,
-      "name": "Spider-Man",
-      "creation_year": 1962,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
-      "best_powers": [
-        "Spider sense",
-        "Superhuman agility",
-        "Web-slinging"
-      ],
-      "creator": "Stan Lee and Steve Ditko",
-      "archenemy": "Green Goblin",
-      "description": "Spider-Man, also known as Peter Parker, gained his powers after being bitten by a radioactive spider. With his spider-like abilities, he swings through the streets of New York, fighting crime and saving innocent lives.",
-      "company": "Marvel"
-    },
-    {
-      "id": 4,
-      "name": "Wonder Woman",
+      "id": "4",
+      "name": "wonder Woman",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
       "best_powers": [
@@ -61,7 +16,7 @@
       "company": "DC"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Flash",
       "creation_year": 1940,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -76,7 +31,7 @@
       "company": "DC"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Iron Man",
       "creation_year": 1963,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -91,7 +46,7 @@
       "company": "Marvel"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Hulk",
       "creation_year": 1962,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -106,7 +61,7 @@
       "company": "Marvel"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Thor",
       "creation_year": 1962,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -121,7 +76,7 @@
       "company": "Marvel"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Captain America",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -136,7 +91,7 @@
       "company": "Marvel"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Green Lantern",
       "creation_year": 1940,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -151,7 +106,7 @@
       "company": "DC"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Black Panther",
       "creation_year": 1966,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -166,7 +121,7 @@
       "company": "Marvel"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Doctor Strange",
       "creation_year": 1963,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -181,7 +136,7 @@
       "company": "Marvel"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Wolverine",
       "creation_year": 1974,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -196,7 +151,7 @@
       "company": "Marvel"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Wonder Woman",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -211,7 +166,7 @@
       "company": "DC"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Captain Marvel",
       "creation_year": 1967,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -226,7 +181,7 @@
       "company": "Marvel"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Aquaman",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -241,7 +196,7 @@
       "company": "DC"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Green Arrow",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -256,7 +211,7 @@
       "company": "DC"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Cyborg",
       "creation_year": 1980,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -271,7 +226,7 @@
       "company": "DC"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "The Flash",
       "creation_year": 1956,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -286,7 +241,7 @@
       "company": "DC"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Supergirl",
       "creation_year": 1959,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
