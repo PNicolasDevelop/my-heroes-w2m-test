@@ -11,7 +11,7 @@ describe('SupheroeCardComponent', () => {
   let component: SupheroeCardComponent;
   let fixture: ComponentFixture<SupheroeCardComponent>;
   let mockRouter: jasmine.SpyObj<Router>;
-  let mockMatDialog: jasmine.SpyObj<MatDialog>;
+  let mockDialog: jasmine.SpyObj<MatDialog>;
 
   const apiServiceMock = {
     deleteHero: () => of({}),
@@ -19,6 +19,7 @@ describe('SupheroeCardComponent', () => {
 
   beforeEach(async () => {
     const routerSpy = jasmine.createSpyObj('Router', ['navigate']);
+    mockDialog = jasmine.createSpyObj('MatDialog', ['open']);
     await TestBed.configureTestingModule({
       declarations: [SupheroeCardComponent],
       imports: [ToastrModule.forRoot()],
@@ -29,13 +30,12 @@ describe('SupheroeCardComponent', () => {
         },
         {
           provide: MatDialog,
-          useValue: {},
+          useValue: mockDialog,
         },
         { provide: Router, useValue: routerSpy },
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
     }).compileComponents();
-    mockMatDialog = TestBed.inject(MatDialog) as jasmine.SpyObj<MatDialog>;
     mockRouter = TestBed.inject(Router) as jasmine.SpyObj<Router>;
   });
 
@@ -54,7 +54,14 @@ describe('SupheroeCardComponent', () => {
     expect(mockRouter.navigate).toHaveBeenCalledWith(['/edit', heroId]);
   });
 
-  // it('removeHero', () => {
-  //   component.removeHero(1);
-  // });
+  it('removeHero', () => {
+    const id = 1;
+    const dialogRefSpy = jasmine.createSpyObj('MatDialogRef', ['afterClosed']);
+    const dialogRefResult = of(true);
+    dialogRefSpy.afterClosed.and.returnValue(dialogRefResult);
+    mockDialog.open.and.returnValue(dialogRefSpy);
+    spyOn(component.removed, 'emit');
+
+    component.removeHero(id);
+  });
 });

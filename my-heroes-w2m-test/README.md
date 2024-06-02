@@ -1,27 +1,15 @@
-# MyHeroesW2mTest
+# Super(Hero) Admin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Este proyecto está funcionando en Angular 16.0.0 LTS.
 
-## Development server
+## Servidor de Desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Lanzar `npm run start` lanzará tanto el servidor de desarrollo de la parte front como el servidor back montado en JSON Server
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Lanzar `npm run test` lanzará los test asociados al proyecto.
 
-## Running end-to-end tests
+## Información sobre el proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este proyecto es un front de administración de Superheroes montado en la parte front con Angular en su versión 16.0.0 y el back montado en JSON Server. 
