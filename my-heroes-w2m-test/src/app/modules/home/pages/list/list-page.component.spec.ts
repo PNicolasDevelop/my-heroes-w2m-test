@@ -4,63 +4,66 @@ import { ComicCompany, Hero } from '../../models/models';
 import { SuperheroesService } from '../../services/superheroes.service';
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { of } from 'rxjs';
+import { Router } from '@angular/router';
 
 describe('ListPageComponent', () => {
   let component: ListPageComponent;
   let fixture: ComponentFixture<ListPageComponent>;
-
+  let mockRouter: jasmine.SpyObj<Router>;
   //Mocks
   const listHero: Hero[] = [
     {
-      id: 1,
-      name: 'Superman',
-      creation_year: 1938,
+      id: 4,
+      name: 'wonder woman',
+      description:
+        'Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters. sdfsdf',
+      creation_year: 1945,
       imageUrl:
         'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x',
-      best_powers: ['Flight', 'Superhuman strength', 'Heat vision'],
-      creator: 'Jerry Siegel and Joe Shuster',
-      archenemy: 'Lex Luthor',
-      description:
-        'Superman, also known as the Man of Steel, is a symbol of hope and justice. He possesses incredible powers, including flight, super strength, and heat vision, making him one of the most powerful beings on Earth.',
-      company: ComicCompany.DC,
+      company: ComicCompany.Marvel,
     },
     {
-      id: 2,
-      name: 'Batman',
-      creation_year: 1939,
+      id: 6,
+      name: 'iron man',
+      creation_year: 1963,
       imageUrl:
         'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x',
-      best_powers: [
-        'Superior intelligence',
-        'Master martial artist',
-        'Advanced technology',
-      ],
-      creator: 'Bob Kane and Bill Finger',
-      archenemy: 'Joker',
       description:
-        'Batman, the Dark Knight, is a vigilante who fights crime in Gotham City. Despite lacking superpowers, he relies on his intellect, combat skills, and high-tech gadgets to combat evil and protect his city.',
-      company: ComicCompany.DC,
+        'Iron Man, also known as Tony Stark, is a billionaire genius who fights crime using his high-tech armored suit. With his intellect and resources, he defends the world from technological threats.',
+      company: ComicCompany.Marvel,
     },
     {
-      id: 3,
-      name: 'Spider-Man',
+      id: 7,
+      name: 'hulk',
       creation_year: 1962,
       imageUrl:
         'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x',
-      best_powers: ['Spider sense', 'Superhuman agility', 'Web-slinging'],
-      creator: 'Stan Lee and Steve Ditko',
-      archenemy: 'Green Goblin',
       description:
-        'Spider-Man, also known as Peter Parker, gained his powers after being bitten by a radioactive spider. With his spider-like abilities, he swings through the streets of New York, fighting crime and saving innocent lives.',
-      company: ComicCompany.DC,
+        'The Hulk, a gamma-powered behemoth, is a force of nature fueled by rage. Despite his immense strength, he struggles with inner turmoil, constantly battling to control the monster within.',
+      company: ComicCompany.Marvel,
+    },
+  ];
+
+  const listHeroFiltered: Hero[] = [
+    {
+      id: 4,
+      name: 'wonder woman',
+      description:
+        'Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters. sdfsdf',
+      creation_year: 1945,
+      imageUrl:
+        'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x',
+      company: ComicCompany.Marvel,
     },
   ];
 
   const apiServiceMock = {
     getHeroes: () => of(listHero),
+    filterHeroes: () => of(listHeroFiltered),
   };
 
   beforeEach(async () => {
+    const routerSpy = jasmine.createSpyObj('Router', ['navigate']);
     await TestBed.configureTestingModule({
       declarations: [ListPageComponent],
       imports: [],
@@ -69,9 +72,11 @@ describe('ListPageComponent', () => {
           provide: SuperheroesService,
           useValue: apiServiceMock,
         },
+        { provide: Router, useValue: routerSpy },
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
     }).compileComponents();
+    mockRouter = TestBed.inject(Router) as jasmine.SpyObj<Router>;
   });
 
   beforeEach(() => {
@@ -87,5 +92,21 @@ describe('ListPageComponent', () => {
   it('getData', () => {
     component.getData();
     expect(component).toBeTruthy();
+  });
+
+  it('filterData', () => {
+    component.filterData({ name: 'wo' });
+    expect(component).toBeTruthy();
+  });
+
+  it('filterList', () => {
+    component.listHeroes = listHero;
+    component.filterList(4);
+    expect(component.listHeroes).toHaveSize(2);
+  });
+
+  it('navigateToCreate', () => {
+    component.navigateToCreate();
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['create']);
   });
 });

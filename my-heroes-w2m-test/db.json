@@ -1,7 +1,7 @@
 {
   "heroes": [
     {
-      "id": "4",
+      "id": 4,
       "name": "wonder woman",
       "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters. sdfsdf",
       "creation_year": 1945,
@@ -9,7 +9,7 @@
       "company": "Marvel"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "iron man",
       "creation_year": 1963,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -17,7 +17,7 @@
       "company": "Marvel"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "hulk",
       "creation_year": 1962,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -25,14 +25,14 @@
       "company": "Marvel"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "thor",
       "creation_year": 1962,
       "description": "Thor, the God of Thunder, wields the enchanted hammer Mjolnir to protect Asgard and Midgard. With his divine powers and warrior spirit, he defends the Nine Realms from cosmic threats.",
       "company": "Marvel"
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "captain america",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -40,7 +40,7 @@
       "company": "Marvel"
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "green lantern",
       "creation_year": 1940,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -48,7 +48,7 @@
       "company": "DC"
     },
     {
-      "id": "11",
+      "id": 11,
       "name": "black panther",
       "creation_year": 1966,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -56,7 +56,7 @@
       "company": "Marvel"
     },
     {
-      "id": "12",
+      "id": 12,
       "name": "doctor strange",
       "creation_year": 1963,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -64,7 +64,7 @@
       "company": "Marvel"
     },
     {
-      "id": "13",
+      "id": 13,
       "name": "wolverine",
       "creation_year": 1974,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
@@ -72,27 +72,11 @@
       "company": "Marvel"
     },
     {
-      "id": "14",
+      "id": 14,
       "name": "wonder woman",
       "creation_year": 1941,
       "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
       "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters.",
-      "company": "DC"
-    },
-    {
-      "id": "15",
-      "name": "captain marvel",
-      "creation_year": 1967,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
-      "description": "Captain Marvel, also known as Carol Danvers, is a cosmic-powered superheroine defending Earth and the universe. With her ability to harness cosmic energy, she battles cosmic threats and protects the innocent from annihilation.",
-      "company": "Marvel"
-    },
-    {
-      "id": "16",
-      "name": "aquaman",
-      "creation_year": 1941,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
-      "description": "Aquaman, the King of Atlantis, is a powerful superhero with command over the seas. With his ability to communicate with marine life and immense strength, he protects the oceans and defends Atlantis from threats above and below the waves.",
       "company": "DC"
     }
   ]
