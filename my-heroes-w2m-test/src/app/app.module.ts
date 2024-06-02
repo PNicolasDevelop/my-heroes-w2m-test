@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [AppComponent, TopMenuComponent, NotFoundComponent],
@@ -17,6 +18,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,

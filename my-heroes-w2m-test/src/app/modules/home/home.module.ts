@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ListPageComponent } from './pages/list/list-page.component';
-import { CreatePage } from './pages/create/create.page';
+import { CreatePageComponent } from './pages/create/create.page';
 import { SupheroeCardComponent } from './components/superheroe-card/superheroe-card.component';
 import { QuestionModalComponent } from './components/modals/question/question.modal';
 import { SuperheroesService } from './services/superheroes.service';
@@ -18,9 +18,21 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CreateEditHeroContainerComponent } from './components/create-edit-hero-container/create-edit-hero-container.component';
+import { HeroFormComponent } from './components/hero-form/hero-form.component';
+import { EditPageComponent } from './pages/edit/edit.page';
+import { CommonAppModule } from '../common/common.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
-const PAGES = [ListPageComponent, CreatePage];
-const COMPONENTS = [SupheroeCardComponent, FilterComponent];
+const PAGES = [ListPageComponent, CreatePageComponent, EditPageComponent];
+const COMPONENTS = [
+  SupheroeCardComponent,
+  FilterComponent,
+  CreateEditHeroContainerComponent,
+  HeroFormComponent,
+];
 const MODALS = [QuestionModalComponent];
 
 @NgModule({
@@ -33,7 +45,11 @@ const MODALS = [QuestionModalComponent];
       },
       {
         path: 'create',
-        component: CreatePage,
+        component: CreatePageComponent,
+      },
+      {
+        path: 'edit/:id',
+        component: EditPageComponent,
       },
       {
         path: '',
@@ -54,6 +70,8 @@ const MODALS = [QuestionModalComponent];
     MatInputModule,
     FormsModule,
     MatDialogModule,
+    CommonAppModule,
+    ToastrModule,
   ],
   providers: [SuperheroesService],
   exports: [],

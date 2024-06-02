@@ -1,6 +1,8 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ComicCompany } from '../../models/models';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-filter',
@@ -11,22 +13,13 @@ export class FilterComponent {
   @Output() filterData = new EventEmitter();
   filterForm = new FormGroup({
     name: new FormControl<string | null>(null),
-    type: new FormControl<ComicCompany | null>(null),
-    creation: new FormControl<number | null>(null),
   });
-  comicCompanies = Object.keys(ComicCompany).map(key => ({
-    key,
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore no problem
-    value: ComicCompany[key],
-  }));
 
-  search() {
-    this.filterData.emit(this.filterForm.getRawValue());
-  }
-
-  resetFilter() {
-    this.filterForm.reset();
-    this.filterData.emit(this.filterForm.getRawValue());
+  constructor() {
+    this.filterForm.valueChanges
+      .pipe(takeUntilDestroyed(), debounceTime(500))
+      .subscribe(newValue => {
+        this.filterData.emit(newValue);
+      });
   }
 }

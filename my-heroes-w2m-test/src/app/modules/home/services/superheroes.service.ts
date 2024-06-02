@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { FilterHeroes, Hero } from '../models/models';
+import { map, Observable, switchMap } from 'rxjs';
+import { FilterHeroes, Hero, HeroWrite } from '../models/models';
 /* istanbul ignore file */
 @Injectable()
 export class SuperheroesService {
@@ -13,21 +13,31 @@ export class SuperheroesService {
     return this.http.get<Hero[]>(this.apiUrl);
   }
 
+  getHeroById(id: number): Observable<Hero> {
+    return this.http.get<Hero>(`${this.apiUrl}/${id}`);
+  }
   filterHeroes(filters: FilterHeroes) {
-    let params = new HttpParams();
-    if (filters.name) params = params.append('name', filters.name);
-    if (filters.type) params = params.append('company', filters.type);
-    if (filters.creation)
-      params = params.append('creation_year', filters.creation);
-
-    return this.http.get<Hero[]>(`${this.apiUrl}`, { params });
+    return this.http.get<Hero[]>(
+      `${this.apiUrl}?name_like=${filters.name ?? ''}`
+    );
   }
 
-  addHero(hero: Hero): Observable<any> {
-    return this.http.post(this.apiUrl, hero);
+  addHero(hero: HeroWrite): Observable<any> {
+    // return this.http.post(this.apiUrl, hero);
+    return this.getHeroes().pipe(
+      map(superheroes => {
+        const maxId = superheroes.reduce(
+          (max, hero) => (hero.id > max ? hero.id : max),
+          0
+        );
+        hero.id = maxId + 1;
+        return hero;
+      }),
+      switchMap(newSuperhero => this.http.post<any>(this.apiUrl, newSuperhero))
+    );
   }
 
-  updateHero(id: number, hero: Hero): Observable<any> {
+  updateHero(id: number, hero: HeroWrite): Observable<any> {
     return this.http.put(`${this.apiUrl}/${id}`, hero);
   }
 

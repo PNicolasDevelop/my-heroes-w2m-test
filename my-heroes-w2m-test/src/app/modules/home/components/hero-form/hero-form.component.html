@@ -1,0 +1,28 @@
+<form [formGroup]="form">
+  <div class="container">
+    <div class="form">
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input style="text-transform: uppercase" matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Año creación</mat-label>
+        <input type="number" matInput formControlName="creation_year">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Url Imagen</mat-label>
+        <input matInput formControlName="imageUrl">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <textarea matInput placeholder="Introduce una descripción..." formControlName="description"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Compañía</mat-label>
+        <mat-select formControlName="company">
+          <mat-option *ngFor="let company of comicCompanies" [value]="company.key">{{company.value}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</form>

@@ -1,4 +1,6 @@
 <div class="container">
+  <div><ng-container *ngTemplateOutlet="actions"></ng-container></div>
+  <h2>{{ title }}</h2>
   <div><ng-container *ngTemplateOutlet="form"> </ng-container></div>
   <div class="buttons-container">
     <ng-container *ngTemplateOutlet="buttons"> </ng-container>

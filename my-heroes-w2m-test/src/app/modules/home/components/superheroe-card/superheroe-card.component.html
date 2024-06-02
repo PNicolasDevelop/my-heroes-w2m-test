@@ -10,7 +10,7 @@
     {{hero.description}}
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>Detalle</button>
-    <button mat-button (click)="removeHero(hero.id)">Eliminar</button>
+    <button mat-flat-button color="primary" (click)="editHero(hero.id)"><mat-icon>edit</mat-icon>Editar</button>
+    <button mat-flat-button color="warn" (click)="removeHero(hero.id)"><mat-icon>delete</mat-icon>Eliminar</button>
   </mat-card-actions>
 </mat-card>

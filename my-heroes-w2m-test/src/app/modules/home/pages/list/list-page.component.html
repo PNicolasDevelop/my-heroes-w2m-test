@@ -1,11 +1,15 @@
-<div class="container">
-  <app-filter (filterData)="filterData($event)"></app-filter>
-  <div class="actions">
-    <button class="create-button" mat-flat-button color="accent"><mat-icon>add_circle</mat-icon> Añadir Superheroe</button>
-  </div>
-  <div class="cards-container">
-    <div *ngFor="let hero of listHeroes">
-      <app-supheroe-card [hero]="hero" (removed)="filterList($event)"></app-supheroe-card>
+<app-loader [observable]="observable">
+  <ng-template #content>
+    <div class="container">
+      <app-filter (filterData)="filterData($event)"></app-filter>
+      <div class="actions">
+        <button class="create-button" mat-flat-button color="accent" (click)="navigateToCreate()"><mat-icon>add_circle</mat-icon> Añadir Superheroe</button>
+      </div>
+      <div class="cards-container">
+        <div *ngFor="let hero of listHeroes">
+          <app-supheroe-card [hero]="hero" (removed)="filterList($event)"></app-supheroe-card>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </ng-template>
+</app-loader>

@@ -1,1 +1,11 @@
-<div class="actions">m</div>
+<app-create-edit-hero-container [title]="'Crear heroe'">
+  <ng-template #actions>
+      <button style="padding: 25px" mat-flat-button color="accent" (click)="navegateToList()" ><mat-icon>undo</mat-icon> Volver al listado</button>
+  </ng-template>
+  <ng-template #form>
+    <app-hero-formulary [form]="heroForm"></app-hero-formulary>
+  </ng-template>
+  <ng-template #buttons>
+    <button [disabled]="!heroForm.valid" style="padding: 25px" mat-flat-button color="accent" (click)="saveHero()"><mat-icon>save</mat-icon> Guardar</button>
+  </ng-template>
+</app-create-edit-hero-container>

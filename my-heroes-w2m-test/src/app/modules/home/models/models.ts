@@ -3,17 +3,21 @@ export interface Hero {
   name: string;
   creation_year: number;
   imageUrl: string;
-  best_powers: string[];
-  creator: string;
-  archenemy: string;
   description: string;
   company: ComicCompany; // TODO: change by enumerator
 }
 
+export interface HeroWrite {
+  id?: number;
+  name: string;
+  creation_year: number;
+  imageUrl: string;
+  description: string;
+  company: ComicCompany;
+}
+
 export interface FilterHeroes {
   name?: string;
-  type?: string;
-  creation?: number;
 }
 
 export enum ComicCompany {

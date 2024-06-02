@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SuperheroesService } from '../../services/superheroes.service';
 import { FilterHeroes, Hero } from '../../models/models';
-import { catchError, map, of } from 'rxjs';
+import { catchError, map, Observable, of, tap } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -10,53 +11,48 @@ import { catchError, map, of } from 'rxjs';
 })
 export class ListPageComponent implements OnInit {
   listHeroes!: Hero[];
-  constructor(private api: SuperheroesService) {}
-
+  constructor(
+    private api: SuperheroesService,
+    private router: Router
+  ) {}
+  observable: Observable<void | Hero[]> = of(void 0);
   ngOnInit() {
     this.getData();
   }
 
   getData() {
-    this.api
-      .getHeroes()
-      .pipe(
-        map(data => ({ success: true, data: data, error: null })),
-        catchError(error => {
-          return of({
-            success: false,
-            data: undefined,
-            error: JSON.parse(error.response),
-          });
-        })
-      )
-      .subscribe(val => {
-        if (val.success) {
-          this.listHeroes = val.data ?? [];
+    this.observable = this.api.getHeroes().pipe(
+      tap(list => {
+        if (list !== undefined) {
+          this.listHeroes = list;
         }
-      });
+      }),
+      catchError(() => {
+        console.log('error');
+        return of(void 0);
+      })
+    );
   }
 
   filterData(data: FilterHeroes) {
-    this.api
-      .filterHeroes(data)
-      .pipe(
-        map(data => ({ success: true, data: data, error: null })),
-        catchError(error => {
-          return of({
-            success: false,
-            data: undefined,
-            error: JSON.parse(error.response),
-          });
-        })
-      )
-      .subscribe(val => {
-        if (val.success) {
-          this.listHeroes = val.data ?? [];
+    this.observable = this.api.filterHeroes(data).pipe(
+      tap(list => {
+        if (list !== undefined) {
+          this.listHeroes = list;
         }
-      });
+      }),
+      catchError(() => {
+        console.log('error');
+        return of(void 0);
+      })
+    );
   }
 
   filterList(id: number) {
     this.listHeroes = this.listHeroes.filter((hero: Hero) => hero.id !== id);
+  }
+
+  navigateToCreate() {
+    this.router.navigate(['create']);
   }
 }
