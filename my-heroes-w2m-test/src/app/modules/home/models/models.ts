@@ -4,7 +4,7 @@ export interface Hero {
   creation_year: number;
   imageUrl: string;
   description: string;
-  company: ComicCompany; // TODO: change by enumerator
+  company: ComicCompany;
 }
 
 export interface HeroWrite {

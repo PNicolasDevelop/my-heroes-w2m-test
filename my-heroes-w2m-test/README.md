@@ -13,3 +13,8 @@ Lanzar `npm run test` lanzará los test asociados al proyecto.
 ## Información sobre el proyecto
 
 Este proyecto es un front de administración de Superheroes montado en la parte front con Angular en su versión 16.0.0 y el back montado en JSON Server. 
+
+## Futuras Features
+
+- Mejorar notablemente estilos y hacer responsive para poder usarse en mobile.
+- Añadir lista de superheroes favoritos y poder administrarlos.
