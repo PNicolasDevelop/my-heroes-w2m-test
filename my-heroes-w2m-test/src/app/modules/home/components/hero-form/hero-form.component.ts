@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { ComicCompany } from '../../models/models';
+import { ComicCompany, HeroFormControls } from '../../models/models';
 
 @Component({
   selector: 'app-hero-formulary',
@@ -8,11 +8,6 @@ import { ComicCompany } from '../../models/models';
   styleUrls: ['./hero-form.component.scss'],
 })
 export class HeroFormComponent {
-  @Input() form!: FormGroup;
-  comicCompanies = Object.keys(ComicCompany).map(key => ({
-    key,
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore no problem
-    value: ComicCompany[key],
-  }));
+  @Input() form!: FormGroup<HeroFormControls>;
+  protected readonly ComicCompany = ComicCompany;
 }

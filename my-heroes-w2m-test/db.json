@@ -2,19 +2,19 @@
   "heroes": [
     {
       "id": 4,
-      "name": "wonder woman",
       "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters. sdfsdf",
       "creation_year": 1945,
       "imageUrl": "https://img.posterstore.com/zoom/wb0059-8wonderwoman-cartoon50x70.jpg",
-      "company": "Marvel"
+      "name": "wonder woman",
+      "company": "DC"
     },
     {
       "id": 6,
-      "name": "iron man",
+      "description": "Iron Man, also known as Tony Stark, is a billionaire genius who fights crime using his high-tech armored suit. With his intellect and resources, he defends the world from technological threats.",
       "creation_year": 1963,
       "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/marvel-sustituto-iron-man-serie-65859273d1187.jpg",
-      "description": "Iron Man, also known as Tony Stark, is a billionaire genius who fights crime using his high-tech armored suit. With his intellect and resources, he defends the world from technological threats.",
-      "company": "Marvel"
+      "name": "iron man",
+      "company": "DC"
     },
     {
       "id": 7,
@@ -26,10 +26,10 @@
     },
     {
       "id": 8,
-      "name": "thor",
-      "imageUrl": "https://i.pinimg.com/originals/5b/eb/f1/5bebf147723add0dec80991da354c031.png",
-      "creation_year": 1962,
       "description": "Thor, the God of Thunder, wields the enchanted hammer Mjolnir to protect Asgard and Midgard. With his divine powers and warrior spirit, he defends the Nine Realms from cosmic threats.",
+      "creation_year": 1962,
+      "imageUrl": "https://i.pinimg.com/originals/5b/eb/f1/5bebf147723add0dec80991da354c031.png",
+      "name": "thor",
       "company": "Marvel"
     },
     {
@@ -70,6 +70,22 @@
       "creation_year": 1974,
       "imageUrl": "https://cafans.b-cdn.net/images/Category_36368/subcat_149190/ZTI57xY7_0602211031451sbpi.jpg",
       "description": "Wolverine, also known as Logan, is a fierce and relentless mutant with a tragic past. With his adamantium claws and accelerated healing factor, he is a formidable warrior and a member of the X-Men, fighting to protect mutantkind and all of humanity from threats both internal and external.",
+      "company": "Marvel"
+    },
+    {
+      "description": "Esto es una descripción de prueba",
+      "creation_year": 1988,
+      "imageUrl": "https://foraplagues.com/wp-content/uploads/2018/09/mosca-domestica-plaga.jpg",
+      "name": "la mosca",
+      "company": "Valiant",
+      "id": 14
+    },
+    {
+      "id": 15,
+      "description": "Es un thanos muy thanos editado",
+      "creation_year": 1996,
+      "imageUrl": "https://media.gq.com.mx/photos/5dec0db85b7e8300097bca15/16:9/w_1280,c_limit/thanos-bebe-marvel.jpg",
+      "name": "Thanos",
       "company": "Marvel"
     }
   ]

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ComicCompany } from '../../models/models';
+import { ComicCompany, HeroFormControls } from '../../models/models';
 import { Router } from '@angular/router';
 import { SuperheroesService } from '../../services/superheroes.service';
 import { catchError, map, of } from 'rxjs';
@@ -11,24 +11,12 @@ import { catchError, map, of } from 'rxjs';
   styleUrls: ['./create.page.scss'],
 })
 export class CreatePageComponent {
-  heroForm = new FormGroup({
-    name: new FormControl<string | undefined>(undefined, Validators.required),
-    creation_year: new FormControl<number | undefined>(
-      undefined,
-      Validators.required
-    ),
-    imageUrl: new FormControl<string | undefined>(
-      undefined,
-      Validators.required
-    ),
-    description: new FormControl<string | undefined>(
-      undefined,
-      Validators.required
-    ),
-    company: new FormControl<ComicCompany | undefined>(
-      undefined,
-      Validators.required
-    ),
+  heroForm: FormGroup<HeroFormControls> = new FormGroup({
+    name: new FormControl<string | null>(null, Validators.required),
+    creation_year: new FormControl<number | null>(null, Validators.required),
+    imageUrl: new FormControl<string | null>(null, Validators.required),
+    description: new FormControl<string | null>(null, Validators.required),
+    company: new FormControl<ComicCompany | null>(null, Validators.required),
   });
   constructor(
     private router: Router,

@@ -1,3 +1,5 @@
+import { FormControl } from '@angular/forms';
+
 export interface Hero {
   id: number;
   name: string;
@@ -34,4 +36,12 @@ export enum ComicCompany {
 
 export interface QuestionModalConfigData {
   title: string;
+}
+
+export interface HeroFormControls {
+  name: FormControl<string | null>;
+  creation_year: FormControl<number | null>;
+  imageUrl: FormControl<string | null>;
+  description: FormControl<string | null>;
+  company: FormControl<ComicCompany | null>;
 }

@@ -20,7 +20,7 @@
       <mat-form-field>
         <mat-label>Compañía</mat-label>
         <mat-select formControlName="company">
-          <mat-option *ngFor="let company of comicCompanies" [value]="company.key">{{company.value}}</mat-option>
+          <mat-option *ngFor="let company of ComicCompany | keyvalue" [value]="company.key">{{company.value}}</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
