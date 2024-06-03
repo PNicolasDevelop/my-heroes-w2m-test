@@ -4,6 +4,7 @@ import { ComicCompany, HeroFormControls } from '../../models/models';
 import { Router } from '@angular/router';
 import { SuperheroesService } from '../../services/superheroes.service';
 import { catchError, map, of } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-create',
@@ -20,7 +21,8 @@ export class CreatePageComponent {
   });
   constructor(
     private router: Router,
-    private api: SuperheroesService
+    private api: SuperheroesService,
+    private toastrService: ToastrService
   ) {}
 
   saveHero() {
@@ -44,9 +46,10 @@ export class CreatePageComponent {
       )
       .subscribe(val => {
         if (val.success) {
+          this.toastrService.success('Superheroe creado con éxito');
           this.navegateToList();
         } else {
-          console.log('error'); // SACAR ERROR
+          this.toastrService.error('Error al crear el superheroe'); // SACAR ERROR
         }
       });
   }
