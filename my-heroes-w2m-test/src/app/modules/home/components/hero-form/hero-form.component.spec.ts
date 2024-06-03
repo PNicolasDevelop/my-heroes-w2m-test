@@ -5,7 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ComicCompany } from '../../models/models';
+import {ComicCompany, HeroFormControls} from '../../models/models';
 
 describe('HeroFormComponent', () => {
   let component: HeroFormComponent;
@@ -27,12 +27,12 @@ describe('HeroFormComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HeroFormComponent);
     component = fixture.componentInstance;
-    component.form = new FormGroup({
+    component.form = new FormGroup<HeroFormControls>({
       name: new FormControl(''),
       creation_year: new FormControl(0),
       imageUrl: new FormControl(''),
       description: new FormControl(''),
-      company: new FormControl(ComicCompany.DC),
+      company: new FormControl(null),
     });
   });
 

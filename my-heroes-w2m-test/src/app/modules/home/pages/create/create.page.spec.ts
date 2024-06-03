@@ -5,16 +5,21 @@ import { QuestionModalComponent } from '../../components/modals/question/questio
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { SuperheroesService } from '../../services/superheroes.service';
 import { Router } from '@angular/router';
+import {ToastrService} from "ngx-toastr";
 
 describe('CreatePage', () => {
   let component: CreatePageComponent;
   let fixture: ComponentFixture<CreatePageComponent>;
-
+  let mockToastrService: jasmine.SpyObj<ToastrService>;
   const apiServiceMock = {
     addHero: () => of({}),
   };
   beforeEach(async () => {
     const routerSpy = jasmine.createSpyObj('Router', ['navigate']);
+    mockToastrService = jasmine.createSpyObj('ToastrService', [
+      'error',
+      'success',
+    ]);
     await TestBed.configureTestingModule({
       declarations: [CreatePageComponent],
       imports: [],
@@ -24,6 +29,7 @@ describe('CreatePage', () => {
           useValue: apiServiceMock,
         },
         { provide: Router, useValue: routerSpy },
+        { provide: ToastrService, useValue: mockToastrService },
       ],
       schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();

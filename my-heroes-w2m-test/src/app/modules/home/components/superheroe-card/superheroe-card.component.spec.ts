@@ -4,7 +4,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { SuperheroesService } from '../../services/superheroes.service';
 import { of } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
-import { ToastrModule } from 'ngx-toastr';
+import {ToastrModule, ToastrService} from 'ngx-toastr';
 import { Router } from '@angular/router';
 
 describe('SupheroeCardComponent', () => {
@@ -12,6 +12,7 @@ describe('SupheroeCardComponent', () => {
   let fixture: ComponentFixture<SupheroeCardComponent>;
   let mockRouter: jasmine.SpyObj<Router>;
   let mockDialog: jasmine.SpyObj<MatDialog>;
+  let mockToastrService: jasmine.SpyObj<ToastrService>;
 
   const apiServiceMock = {
     deleteHero: () => of({}),
@@ -20,6 +21,10 @@ describe('SupheroeCardComponent', () => {
   beforeEach(async () => {
     const routerSpy = jasmine.createSpyObj('Router', ['navigate']);
     mockDialog = jasmine.createSpyObj('MatDialog', ['open']);
+    mockToastrService = jasmine.createSpyObj('ToastrService', [
+      'error',
+      'success',
+    ]);
     await TestBed.configureTestingModule({
       declarations: [SupheroeCardComponent],
       imports: [ToastrModule.forRoot()],
@@ -33,6 +38,7 @@ describe('SupheroeCardComponent', () => {
           useValue: mockDialog,
         },
         { provide: Router, useValue: routerSpy },
+        { provide: ToastrService, useValue: mockToastrService },
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
     }).compileComponents();

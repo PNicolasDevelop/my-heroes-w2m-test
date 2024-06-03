@@ -5,11 +5,13 @@ import { SuperheroesService } from '../../services/superheroes.service';
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
+import {ToastrService} from "ngx-toastr";
 
 describe('ListPageComponent', () => {
   let component: ListPageComponent;
   let fixture: ComponentFixture<ListPageComponent>;
   let mockRouter: jasmine.SpyObj<Router>;
+  let mockToastrService: jasmine.SpyObj<ToastrService>;
   //Mocks
   const listHero: Hero[] = [
     {
@@ -64,6 +66,10 @@ describe('ListPageComponent', () => {
 
   beforeEach(async () => {
     const routerSpy = jasmine.createSpyObj('Router', ['navigate']);
+    mockToastrService = jasmine.createSpyObj('ToastrService', [
+      'error',
+      'success',
+    ]);
     await TestBed.configureTestingModule({
       declarations: [ListPageComponent],
       imports: [],
@@ -73,6 +79,7 @@ describe('ListPageComponent', () => {
           useValue: apiServiceMock,
         },
         { provide: Router, useValue: routerSpy },
+        { provide: ToastrService, useValue: mockToastrService },
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
     }).compileComponents();
