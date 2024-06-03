@@ -3,6 +3,7 @@ import { SuperheroesService } from '../../services/superheroes.service';
 import { FilterHeroes, Hero } from '../../models/models';
 import { catchError, map, Observable, of, tap } from 'rxjs';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-list',
@@ -13,7 +14,8 @@ export class ListPageComponent implements OnInit {
   listHeroes!: Hero[];
   constructor(
     private api: SuperheroesService,
-    private router: Router
+    private router: Router,
+    private toastrService: ToastrService
   ) {}
   observable: Observable<void | Hero[]> = of(void 0);
   ngOnInit() {
@@ -28,7 +30,7 @@ export class ListPageComponent implements OnInit {
         }
       }),
       catchError(() => {
-        console.log('error');
+        this.toastrService.error('Error al obtener los datos');
         return of(void 0);
       })
     );
@@ -42,7 +44,7 @@ export class ListPageComponent implements OnInit {
         }
       }),
       catchError(() => {
-        console.log('error');
+        this.toastrService.error('Error al obtener los datos');
         return of(void 0);
       })
     );
