@@ -1,16 +1,16 @@
 <mat-card class="example-card">
   <mat-card-header>
     <mat-card-title-group>
-      <mat-card-title>{{ hero.name | titlecase }}</mat-card-title>
-      <mat-card-subtitle>{{ hero.creation_year }}</mat-card-subtitle>
+      <mat-card-title><h3>{{ hero.name | titlecase }}</h3></mat-card-title>
+      <mat-card-subtitle><p style="color: white">{{ hero.creation_year }}</p></mat-card-subtitle>
       <img [alt]="hero.name + '_img'" mat-card-xl-image [src]="hero.imageUrl" >
     </mat-card-title-group>
   </mat-card-header>
-  <mat-card-content>
+  <mat-card-content class="description">
     {{hero.description}}
   </mat-card-content>
   <mat-card-actions>
-    <button mat-flat-button color="primary" (click)="editHero(hero.id)"><mat-icon>edit</mat-icon>Editar</button>
+    <button mat-flat-button class="edit-btn" (click)="editHero(hero.id)"><mat-icon>edit</mat-icon>Editar</button>
     <button mat-flat-button color="warn" (click)="removeHero(hero.id)"><mat-icon>delete</mat-icon>Eliminar</button>
   </mat-card-actions>
 </mat-card>
