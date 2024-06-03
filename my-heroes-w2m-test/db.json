@@ -5,14 +5,14 @@
       "name": "wonder woman",
       "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters. sdfsdf",
       "creation_year": 1945,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://img.posterstore.com/zoom/wb0059-8wonderwoman-cartoon50x70.jpg",
       "company": "Marvel"
     },
     {
       "id": 6,
       "name": "iron man",
       "creation_year": 1963,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/marvel-sustituto-iron-man-serie-65859273d1187.jpg",
       "description": "Iron Man, also known as Tony Stark, is a billionaire genius who fights crime using his high-tech armored suit. With his intellect and resources, he defends the world from technological threats.",
       "company": "Marvel"
     },
@@ -20,13 +20,14 @@
       "id": 7,
       "name": "hulk",
       "creation_year": 1962,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://cdn.vegaoo.es/images/rep_art/gra/321/0/321071/figura-de-plastico-hulk-avengers-9-cm.jpg",
       "description": "The Hulk, a gamma-powered behemoth, is a force of nature fueled by rage. Despite his immense strength, he struggles with inner turmoil, constantly battling to control the monster within.",
       "company": "Marvel"
     },
     {
       "id": 8,
       "name": "thor",
+      "imageUrl": "https://i.pinimg.com/originals/5b/eb/f1/5bebf147723add0dec80991da354c031.png",
       "creation_year": 1962,
       "description": "Thor, the God of Thunder, wields the enchanted hammer Mjolnir to protect Asgard and Midgard. With his divine powers and warrior spirit, he defends the Nine Realms from cosmic threats.",
       "company": "Marvel"
@@ -35,7 +36,7 @@
       "id": 9,
       "name": "captain america",
       "creation_year": 1941,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2017/07/how-to-draw-captain-america-featured-image-1200.png",
       "description": "Captain America, a symbol of patriotism and bravery, is a super soldier enhanced to peak human perfection. With his shield and unwavering resolve, he fights tyranny and injustice wherever it appears.",
       "company": "Marvel"
     },
@@ -43,7 +44,7 @@
       "id": 10,
       "name": "green lantern",
       "creation_year": 1940,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/06/Kyle-Rayner-As-Animated-Green-Lantern.jpg",
       "description": "Green Lantern, an intergalactic peacekeeper, wields the power of will through his emerald ring. With his ring's abilities, he patrols the universe, facing cosmic threats and protecting innocent lives.",
       "company": "DC"
     },
@@ -51,7 +52,7 @@
       "id": 11,
       "name": "black panther",
       "creation_year": 1966,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://cdn.marvel.com/content/1x/007blp_com_cut_dsk_01.jpg",
       "description": "Black Panther, the king of Wakanda, is a skilled warrior and protector of his nation. With his vibranium suit and enhanced abilities, he defends Wakanda's interests and fights for global justice.",
       "company": "Marvel"
     },
@@ -59,7 +60,7 @@
       "id": 12,
       "name": "doctor strange",
       "creation_year": 1963,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://i.ytimg.com/vi/x2mEYEU2flU/maxresdefault.jpg",
       "description": "Doctor Strange, the Sorcerer Supreme, protects the world from mystical threats. With his knowledge of magic and the mystic arts, he battles dark forces beyond the comprehension of ordinary mortals.",
       "company": "Marvel"
     },
@@ -67,17 +68,9 @@
       "id": 13,
       "name": "wolverine",
       "creation_year": 1974,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
+      "imageUrl": "https://cafans.b-cdn.net/images/Category_36368/subcat_149190/ZTI57xY7_0602211031451sbpi.jpg",
       "description": "Wolverine, also known as Logan, is a fierce and relentless mutant with a tragic past. With his adamantium claws and accelerated healing factor, he is a formidable warrior and a member of the X-Men, fighting to protect mutantkind and all of humanity from threats both internal and external.",
       "company": "Marvel"
-    },
-    {
-      "id": 14,
-      "name": "wonder woman",
-      "creation_year": 1941,
-      "imageUrl": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/spider-man-1876543.jpg?tf=3840x",
-      "description": "Wonder Woman, an Amazonian warrior princess, embodies truth, compassion, and strength. With her divine powers and Lasso of Truth, she fights for peace and justice in a world of gods and monsters.",
-      "company": "DC"
     }
   ]
 }
